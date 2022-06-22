@@ -1,0 +1,8 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: sb-ingress
+spec:
+  backend:
+    serviceName: spring-boot-example-v3
+    servicePort: 8080
